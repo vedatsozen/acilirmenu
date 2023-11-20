@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: auto 0;
+}
+
+i.profile {
+    margin: auto;
+    position: fixed;
+    top:0px;
+    right:5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+i.profile:hover {
+    transform: scale(1.05);
+    transition: 300ms ease;
+}
+
+i.profile:active {
+    transform: scale(0.8);
+   
+}
+
+#modal {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    position: fixed;
+    top:50px;
+    right: 5px;
+    padding: 0px;
+    display: none;
+
+}
+
+#modal.open {
+    display: block;
+}
+
+#modal > ul {
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 2px;
+}
+
+#modal > ul > li {
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+#modal > ul > li:hover {
+    background-color: rgb(46, 40, 40);
+    color: white;
+    cursor: pointer;
+}

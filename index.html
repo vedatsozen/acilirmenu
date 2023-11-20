@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT PRATİĞİ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+<i id="profile" class="bi bi-person-circle profile"></i>
+
+<div id="modal">
+    <ul>
+        <li>
+            Link 1
+        </li>
+        <li>
+            Link 2
+        </li>
+        <li>
+           Link 3
+        </li>
+        <li>
+            Link 4
+        </li>
+        <li>
+            Link 5
+        </li>
+        <li>
+           Link 6
+        </li>
+    
+    </ul>
+</div>
+
+</body>
+
+<script>
+
+let ikon = document.getElementById("profile");
+let modal = document.getElementById("modal");
+
+ikon.addEventListener("click", function() {
+modal.classList.toggle("open");
+})
+
+</script>
+</html>
